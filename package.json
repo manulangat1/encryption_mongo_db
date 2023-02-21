@@ -18,6 +18,9 @@
 		"nodejs",
 		"api"
 	],
+	"engines": {
+		"node": "16.x.x"
+	},
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
