@@ -19,7 +19,7 @@
 		"api"
 	],
 	"engines": {
-		"node": "14.20.1"
+		"node": "14.19.2"
 	},
 	"author": "",
 	"license": "ISC",
