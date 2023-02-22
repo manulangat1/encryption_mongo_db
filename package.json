@@ -7,7 +7,7 @@
 		"start:dev": "nodemon --exec babel-node src/server.js",
 		"test": "NODE_ENV=test nyc --reporter=lcov --reporter=text mocha --require  @babel/register 'src/**/**test.js' --timeout 15000 --exit",
 		"prestart": "$npm_execpath run clean && babel ./src --out-dir build",
-		"start": "node ./build/index.js",
+		"start": "node ./build/server.js",
 		"clean": "rm -rf build"
 	},
 	"repository": {
