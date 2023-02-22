@@ -24,8 +24,8 @@ const csfleHelper = new CsfleHelper({
   connectionString,
 });
 
-let schemeMap = csfleHelper.createJsonSchemaMap(dataKey);
-let csfleClient = await csfleHelper.getCsfleEnabledClient(schemeMap);
+// let schemeMap = csfleHelper.createJsonSchemaMap(dataKey);
+// let csfleClient = await csfleHelper.getCsfleEnabledClient(schemeMap);
 const main = async () => {
   let regularClient = await csfleHelper.getRegularClient();
   let schemeMap = csfleHelper.createJsonSchemaMap(dataKey);

@@ -2,7 +2,7 @@
 	"name": "phidi-backend",
 	"version": "1.0.0",
 	"description": "This is NodeJS API",
-	"main": "src/index.js",
+	"main": "src/server.js",
 	"scripts": {
 		"start:dev": "nodemon --exec babel-node src/server.js",
 		"test": "NODE_ENV=test nyc --reporter=lcov --reporter=text mocha --require  @babel/register 'src/**/**test.js' --timeout 15000 --exit",
@@ -19,7 +19,7 @@
 		"api"
 	],
 	"engines": {
-		"node": "16.0.0"
+		"node": "14.20.1"
 	},
 	"author": "",
 	"license": "ISC",
