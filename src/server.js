@@ -107,7 +107,7 @@ const main = async () => {
 
 // console.log(localMasterKey, "Is my key");
 
-// import connectDB from "./db/conn";
+import connectDB from "./db/conn";
 require("dotenv").config();
 
 const PORT = process.env.PORT || 8000;
