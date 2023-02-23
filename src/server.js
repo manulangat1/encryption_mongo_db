@@ -4,9 +4,9 @@ import bodyParser from "body-parser";
 import morgan from "morgan";
 import cors from "cors";
 import colors from "colors";
-import { Patient } from "./db/models";
+// import { Patient } from "./db/models";
 // import { getCsfleEnabledClient } from "./db/helpers";
-import modules from "./modules";
+// import modules from "./modules";
 
 // const { readMasterKey, CsfleHelper } = require("./db/helpers");
 // const connectionString = process.env.ATLAS_URI;
@@ -105,9 +105,9 @@ const main = async () => {
 // main().catch(console.dir)
 // main()
 
-console.log(localMasterKey, "Is my key");
+// console.log(localMasterKey, "Is my key");
 
-import connectDB from "./db/conn";
+// import connectDB from "./db/conn";
 require("dotenv").config();
 
 const PORT = process.env.PORT || 8000;
@@ -125,7 +125,7 @@ app.use(
 
 app.use(cors());
 
-modules(app);
+// modules(app);
 
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
@@ -135,13 +135,13 @@ app.get("/", function (req, res) {
   res.send("Hello world, I am the Fledging Flight API");
 });
 
-app.get("/patients", async (req, res) => {
-  const patients = await Patient.find();
-  console.log(patients);
-  res.send(patients);
+// app.get("/patients", async (req, res) => {
+//   const patients = await Patient.find();
+//   console.log(patients);
+//   res.send(patients);
 
-  // const fa = await getCsfleEnabledClient.
-});
+//   // const fa = await getCsfleEnabledClient.
+// });
 
 app.use("*", (req, res) => {
   res.status(404).send({
