@@ -5,24 +5,24 @@ import morgan from "morgan";
 import cors from "cors";
 import colors from "colors";
 import { Patient } from "./db/models";
-import { getCsfleEnabledClient } from "./db/helpers";
+// import { getCsfleEnabledClient } from "./db/helpers";
 import modules from "./modules";
 
-const { readMasterKey, CsfleHelper } = require("./db/helpers");
-const connectionString = process.env.ATLAS_URI;
-const dataKey = "lhfS9pAFTFKFz8YqpA6JQw==";
+// const { readMasterKey, CsfleHelper } = require("./db/helpers");
+// const connectionString = process.env.ATLAS_URI;
+// const dataKey = "lhfS9pAFTFKFz8YqpA6JQw==";
 
-const localMasterKey = readMasterKey();
+// const localMasterKey = readMasterKey();
 
-const csfleHelper = new CsfleHelper({
-  // The client expects a key management system to store and provide the application's master encryption key. For now, we will use a local master key, so they use the local KMS provider.
-  kmsProviders: {
-    local: {
-      key: localMasterKey,
-    },
-  },
-  connectionString,
-});
+// const csfleHelper = new CsfleHelper({
+//   // The client expects a key management system to store and provide the application's master encryption key. For now, we will use a local master key, so they use the local KMS provider.
+//   kmsProviders: {
+//     local: {
+//       key: localMasterKey,
+//     },
+//   },
+//   connectionString,
+// });
 
 // let schemeMap = csfleHelper.createJsonSchemaMap(dataKey);
 // let csfleClient = await csfleHelper.getCsfleEnabledClient(schemeMap);
@@ -96,7 +96,7 @@ const main = async () => {
 
 // const alla =  main().then(data => console.log("conn open")).catch(err => console.error(err))
 
-main();
+// main();
 // alla.once('open', function() {
 //   console.log("Connected to second MongoDB instance");
 // });
