@@ -6,7 +6,7 @@ import cors from "cors";
 import colors from "colors";
 // import { Patient } from "./db/models";
 // import { getCsfleEnabledClient } from "./db/helpers";
-// import modules from "./modules";
+import modules from "./modules";
 
 // const { readMasterKey, CsfleHelper } = require("./db/helpers");
 // const connectionString = process.env.ATLAS_URI;
@@ -125,7 +125,7 @@ app.use(
 
 app.use(cors());
 
-// modules(app);
+modules(app);
 
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
