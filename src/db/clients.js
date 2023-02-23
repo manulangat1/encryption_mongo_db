@@ -2,8 +2,7 @@
 
 const fs = require("fs");
 const mongodb = require("mongodb");
-// const { ClientEncryption } = require("mongodb-client-encryption")
-let ClientEncryption;
+const { ClientEncryption } = require("mongodb-client-encryption");
 const { MongoClient, Binary } = mongodb;
 
 module.exports = {
