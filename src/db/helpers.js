@@ -16,6 +16,8 @@ module.exports = {
       keyColl = "__keyVault",
       schema = null,
       connectionString = "mongodb+srv://manulangat:3050manu@mern-shopping-list.hquqa.mongodb.net",
+      mongocryptdURI = "mongodb+srv://manulangat:3050manu@mern-shopping-list.hquqa.mongodb.net/test-encrypt?retryWrites=true&w=majority",
+
       mongocryptdBypassSpawn = false,
       mongocryptdSpawnPath = "mongocryptd",
     } = {}) {
