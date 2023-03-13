@@ -126,6 +126,7 @@ module.exports = {
 
           // this handles
           autoEncryption: {
+            bypassAutoEncryption: true,
             //   // The key vault collection contains the data key that the client uses to encrypt and decrypt fields.
             keyVaultNamespace: this.keyVaultNamespace,
             //   // The client expects a key management system to store and provide the application's master encryption key.
